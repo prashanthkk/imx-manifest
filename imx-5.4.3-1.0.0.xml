@@ -11,6 +11,7 @@
   <remote fetch="git://github.com/TimesysGit"  name="Timesys"/>
   <remote fetch="git://github.com/meta-rust"  name="rust"/>
   <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+  <remote fetch="https://github.com/prashanthkk" name="iwave"/>
 
   <project remote="yocto" revision="0275e68b0576cdefc19718e4b1977044f9f43f48" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="0be39721cea6e04c589a419f4bb07fabd0da6704" name="meta-freescale" path="sources/meta-freescale"/>
@@ -35,4 +36,9 @@
      <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
      <linkfile src="README" dest="README-IMXBSP"/>
   </project>
+
+  <project remote="iwave" revision="ed7c71ec471aa492b61fb5ce645aebd3822aa325" name="meta-iwave" path="sources/meta-iwave" >
+     <linkfile src="imx/tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
+  </project>
+
 </manifest>
